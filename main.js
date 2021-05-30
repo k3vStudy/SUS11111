@@ -6,7 +6,7 @@ for(let i = 0; i < 100000000;i++){
     case rand >= 0.5:
       str+="!"
       break;
-    case rand <= 0.5:
+    default:
       str+="1"
   }
   fs.appendFileSync("susfile.txt",str)
